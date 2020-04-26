@@ -1,0 +1,24 @@
+#######################################
+# Syntax Coloring Map For SevenSegments
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+SevenSegments	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+blinkDP	KEYWORD2
+lightAll	KEYWORD2
+clear	KEYWORD2
+printNumber	KEYWORD2
+turnDPOn	KEYWORD2
+turnDPOff	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################

@@ -1,4 +1,4 @@
-# SevenSegments Version: 1.0.0 
+# SevenSegments Version: 1.1.0 
 
 
 This is an Arduino library to manage common cathode seven segments displays.
@@ -52,6 +52,10 @@ https://www.patreon.com/dguisadom
 
 
 # CHANGELOG.
+
+* 1.1.0  (27/April/2020): 
+        * Fixed number limitation on printNumber(int number) method. 
+        * Added the posibility to enable DP on printNumber method.
 
 * 1.0.0  (26/April/2020): 
 	* First release. Full functional to print numbers on a seven segment common cathode display.

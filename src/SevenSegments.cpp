@@ -37,12 +37,16 @@ void SevenSegments::clear(){
         digitalWrite(pinsConfiguration[i],LOW);
     }
 }
-void SevenSegments::printNumber(int number){
-    byte position = B00000001;
-    for (int i = 0; i < 7; i++)
-    {
-        digitalWrite(pinsConfiguration[i],(CHARACTERS[number] & position? HIGH : LOW));
-        position = position << 1;
+void SevenSegments::printNumber(int number,bool dpEnabled = false){
+    if(number <= 9){
+        byte position = B00000001;
+        for (int i = 0; i < 7; i++)
+        {
+            digitalWrite(pinsConfiguration[i],(CHARACTERS[number] & position? HIGH : LOW));
+            position = position << 1;
+        }
+        if(dpEnabled)
+            turnDPOn();
     }
 }
 void SevenSegments::turnDPOn(){

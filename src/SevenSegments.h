@@ -34,7 +34,7 @@ public:
     void blinkDP(int milliseconds = 500);
     void lightAll();
     void clear();
-    void printNumber(int number);
+    void printNumber(int number, bool dpEnabled = false);
     void turnDPOn();
     void turnDPOff();
 };
